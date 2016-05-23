@@ -20,9 +20,8 @@ while answer.lower() == "y":
     naslov = raw_input("Contact's address: ")
     oseba = Kontakt(first_name=ime, last_name=priimek, email=email1, phone=gsm, address=naslov)
     vsi_kontakti.append(oseba)
-    question = raw_input("Would you like to continue with adding contacts (y/n) ")
-    if question.lower() == "n":
-        break
+    answer = raw_input("Would you like to continue with adding contacts (y/n) ")
+
 
 for vnos in vsi_kontakti:
     print vnos.first_name, vnos.last_name, vnos.email, vnos.phone, vnos.address
